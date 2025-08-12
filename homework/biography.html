@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f4ff;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #0f172a;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #d525ac;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 60px 20px;
+        background-color: white;
+        border-radius: 10px;
+        max-width: 1000px;
+        margin: 40px auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .hero-text h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .hero-text h1 span {
+        color: #d31ebb;
+      }
+
+      .hero-text p {
+        font-size: 20px;
+        color: #bd17a1;
+      }
+
+      .hero-text button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #d31ebb;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .hero-text button:hover {
+        background-color: #d73ca9;
+      }
+
+      .hero-img {
+        background-color: #d919bc;
+        border-radius: 50%;
+        padding: 10px;
+      }
+
+      .hero-img img {
+        width: 200px;
+        border-radius: 50%;
+      }
+
+      #about {
+        max-width: 980px;
+        margin: 40px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      #about h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #ba0da5;
+      }
+
+      #about p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      #skills {
+        max-width: 1000px;
+        margin: 40px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      #skills h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #1a2b4c;
+      }
+
+      .item {
+        margin-bottom: 15px;
+      }
+
+      .item p {
+        margin: 0 0 5px;
+        font-weight: bold;
+        color: #222;
+      }
+
+      .figure {
+        background: #ddd; 
+        border-radius: 15px;
+        height: 20px;
+      }
+
+      .fill {
+        height: 100%;
+        background: #d919bc; 
+        color: white;
+        text-align: right;
+        padding-right: 8px;
+        line-height: 20px;
+        font-size: 12px;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 25px;
+        color: #d919bc;
+      }
+
+      table {
+        margin: 40px auto;
+        border-collapse: collapse;
+        width: 68%;
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #d919bc;
+        color: white;
+      }
+
+      form {
+        background-color: white;
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(204, 28, 122, 0.141);
+      }
+
+      form input,
+      form textarea {
+        width: 96%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      form button {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #d217b3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background-color: #de1dab;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Hilola</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Hilola</span></h1>
+        <p>Full-Stack Developer</p>
+        <button>Contact</button>
+      </div>
+      <div class="hero-img">
+        <img
+          src="https://www.shutterstock.com/image-vector/cute-hijab-girl-waving-hand-600nw-2274791023.jpg"
+          alt="Profile Picture"
+        />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate Full-Stack Developer who enjoys working on new
+        projects, bringing creative ideas to life, and creating user-friendly
+        interfaces that make people's lives easier.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="item">
+        <p>HTML</p>
+        <div class="figure">
+          <div class="fill" style="width: 90%">90%</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <p>JavaScript</p>
+        <div class="figure">
+          <div class="fill" style="width: 90%">90%</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <p>CSS</p>
+        <div class="figure">
+          <div class="fill" style="width: 85%">85%</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <p>Python</p>
+        <div class="figure">
+          <div class="fill" style="width: 70%">70%</div>
+        </div>
+      </div>
+    </section>
+
+    <h3>My works</h3>
+    <table id="works">
+      <tr>
+        <th>Project Name</th>
+        <th>Category</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Portfolio Website</td>
+        <td>Web Design</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td>BakeMaster</td>
+        <td>Full-stack</td>
+        <td>In Progress</td>
+      </tr>
+    </table>
+
+    <form id="contact">
+      <h2>Contact Me</h2>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
